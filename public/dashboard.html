@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogify</title>
+    <link rel="stylesheet" href="../styles/sidebar.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/blog.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="sidebar">
+        <div class="sidelink">
+          <img src="../assets/icons/home.svg" />
+          <div class="">Home</div>
+        </div>
+        <div class="sidelink">
+          <img src="../assets/icons/settings-svgrepo-com.svg" />
+          <p>Settings</p>
+        </div>
+
+        <div class="sidelink">
+          <img src="../assets/icons/library.svg" />
+          <p>Groups</p>
+        </div>
+      </div>
+      <div class="further-info-bar">
+        <div class="further-left-section">
+          <div class="stream">Stream</div>
+          <div>Members</div>
+        </div>
+      </div>
+      <div class="left-section">
+        <img class="hamburger-menu" src="../assets/icons/hamburger-menu.svg" />
+        <img class="classroom-logo" src="../assets/icons/classroomlogo.svg" />
+        <p>Shafaqs Classroom</p>
+      </div>
+      <div class="right-section">
+        <p class="plus">+</p>
+        <img class="hamburger-menu" src="../assets/icons/youtube-apps.svg" />
+        <img class="profile-image" src="../assets/icons/my-channel.jpeg" />
+      </div>
+    </div>
+
+    <div class="blog-layout">
+      <div class="submit-blog-container">
+        <img class="profile-picture" src="../assets/icons/my-channel.jpeg" />
+        <form class="blog-input-form">
+          <div class="blog-input-action">
+            <textarea
+              class="blog-input"
+              placeholder="Announce Something?"
+              name="blogContent"
+            ></textarea>
+            <!-- <div class="blog-submit-container">
+              <button type="button" class="blog-cancel">Cancel</button>
+              <button type="submit" class="blog-submit">Post</button>
+            </div> -->
+          </div>
+        </form>
+      </div>
+      <div class="all-posts">
+        <div class="whole-post">
+          <div class="posts-information">
+            <img
+              src="../assets/icons/my-channel.jpeg"
+              class="post-profile-img"
+            />
+            <div class="post-information-content">
+              <p class="post-owner-name">Md Rifat Promil Khankirpola</p>
+              <p class="post-date post-edited">17 May (Edited 6th May)</p>
+            </div>
+          </div>
+          <div class="posted-content">
+            Dear Students, Please check your lab overall lab marks out of 25. If
+            you find any discrepancy, inform us by tomorrow. After that, we will
+            submit the marks to Theory Faculty and no further requests can be
+            processed. ***Some group haven't yet shared the github link, I
+            haven't reduced any mark for it yet. If the Github links are missing
+            tomorrow as well, there will be a 2 mark penalty.***
+          </div>
+        </div>
+
+        <div class="post-comments-container">
+          <div class="see-comments">
+            <img src="../assets/icons/comment-button-icon.png" />
+            <p>See 2 comments</p>
+          </div>
+          <div class="post-comment">
+            <img src="../assets/icons/channel-pictures/channel-1.jpeg" />
+            <div class="post-comment-input">
+              <textarea placeholder="Add Comment"></textarea>
+            </div>
+            <div class="submit-comment">
+              <img src="../assets/icons/submit-icon.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../scripts/dashboard.js" type="module"></script>
+</html>

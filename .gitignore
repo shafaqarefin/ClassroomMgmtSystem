@@ -1,0 +1,61 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules for Node.js projects
+node_modules/
+
+# Ignore build directories
+dist/
+build/
+out/
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.iml
+
+# Ignore OS-generated files
+*.bak
+*.~lock.*
+~$*
+
+# Ignore Python artifacts
+__pycache__/
+*.py[cod]
+
+# Ignore Java files
+*.class
+target/
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore dependencies for Go
+vendor/
+
+# Ignore Rust build artifacts
+/target/
+
+# Ignore JavaScript/TypeScript artifacts
+*.js.map
+*.ts.map
+
+# Ignore archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore coverage reports
+coverage/
+*.lcov

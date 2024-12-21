@@ -1,0 +1,15 @@
+body {
+  height: 3000px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  margin-left: 75px;
+  margin-top: 132px;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 24px;
+}
