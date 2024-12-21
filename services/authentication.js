@@ -1,7 +1,6 @@
 const JWT = require("jsonwebtoken");
 
-const secret = "Something";
-
+let secret; //crreate your own key
 function setTokenForUser(user) {
   const payload = {
     id: user._id,
