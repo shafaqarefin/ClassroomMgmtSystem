@@ -6,10 +6,13 @@ const { connectMongoDB } = require("./connection");
 const userRoute = require("./routes/userRoute");
 const postRoute = require("./routes/postRoute");
 const app = express();
-const PORT = 3000;
+require("dotenv").config();
+
+const PORT = process.env.PORT || 3000;
+const DB_URI = process.env.DB_URI;
 
 // Connection to MongoDB
-connectMongoDB("mongodb://localhost:27017/Blogify")
+connectMongoDB(DB_URI)
   .then(() => console.log("MongoDB Database Connected...."))
   .catch((error) => {
     console.error("Error connecting to MongoDB:", error.message);
