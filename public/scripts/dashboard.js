@@ -1,4 +1,5 @@
 import { postForm } from "../utils/postData.js";
+import { loadComponent } from "../utils/fetchnav.js";
 
 const postBlog = document.querySelector(".submit-blog-container");
 const blogInputAction = document.querySelector(".blog-input-action");
@@ -82,4 +83,9 @@ blogInputForm.addEventListener("submit", (event) => {
     .catch((error) => {
       console.error("Error:", error);
     });
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const content = await loadComponent("navbar.html");
+  document.querySelector(".header").innerHTML = content;
 });
