@@ -86,6 +86,18 @@ blogInputForm.addEventListener("submit", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const content = await loadComponent("navbar.html");
-  document.querySelector(".header").innerHTML = content;
+  let content = await loadComponent("navbar.html");
+
+  // Create a temporary container for the HTML string
+  const tempContainer = document.createElement("div");
+  tempContainer.innerHTML = content;
+
+  // Remove the specific section
+  const sectionToRemove = tempContainer.querySelector(".further-info-bar");
+  if (sectionToRemove) {
+    sectionToRemove.remove();
+  }
+
+  // Inject the modified content into the DOM
+  document.querySelector(".header").innerHTML = tempContainer.innerHTML;
 });
